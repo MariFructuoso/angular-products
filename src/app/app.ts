@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ProductsPage } from './products-page/products-page';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [ProductsPage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  nombre= "Maria"
+  title = "Angular Products"
 }
