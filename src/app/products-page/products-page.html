@@ -74,7 +74,7 @@
             <th>
               <button
                 class="btn btn-sm"
-                [ngClass]="{
+                [class]="{
                 'btn-danger': showImage,
                 'btn-primary': !showImage,
                }"
@@ -96,7 +96,7 @@
               <img [src]="product.imageUrl" alt="" />
               }
             </td>
-            <td [ngClass]="{ 'text-danger': $even, 'text-success': $odd }">
+            <td [class]="{ 'text-danger': $even, 'text-success': $odd }">
               {{ product.description }}
             </td>
             <td>{{ product.price }}</td>
